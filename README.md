@@ -1,17 +1,38 @@
-# movie_watchlist_app
+# Movie Watchlist App
 
-A new Flutter project.
+A Flutter movie watchlist application created for CW-02.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Displays a scrollable list of movies
+- Shows local movie poster images
+- Displays movie title and cast information
+- Allows users to tap a movie to view its details
+- Passes a Movie object from the HomeScreen to the DetailsScreen
+- Displays the movie poster, title, cast, and synopsis on the DetailsScreen
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- `lib/models/movie.dart` - Movie data model
+- `lib/data/movies_data.dart` - Sample movie data
+- `lib/screens/home_screen.dart` - Main movie list screen
+- `lib/screens/details_screen.dart` - Movie details screen
+- `assets/images/` - Local movie poster images
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Movies Included
+
+- Inception
+- The Matrix
+- Interstellar
+- The Dark Knight
+- Parasite
+
+## Navigation
+
+The application uses `Navigator.push()` and `MaterialPageRoute` to navigate from the HomeScreen to the DetailsScreen. The selected Movie object is passed to the DetailsScreen.
+
+## Run the App
+
+```bash
+flutter pub get
+flutter run
