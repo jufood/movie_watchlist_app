@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../data/movies_data.dart';
+import 'package:movie_watchlist_app/data/movies_data.dart';
 import 'details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
